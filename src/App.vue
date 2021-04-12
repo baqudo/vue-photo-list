@@ -95,7 +95,7 @@ export default {
     }
   },
   async mounted() {
-    const {data} = await axios.get('http://jsonplaceholder.typicode.com/photos');
+    const {data} = await axios.get('https://jsonplaceholder.typicode.com/photos');
 
     let items = data.map(item => {
       const {albumId} = item;
